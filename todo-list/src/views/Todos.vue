@@ -63,6 +63,9 @@ export default {
     Loader,
   },
   mounted() {
+    //       fetch("https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&formatted=0")
+    //   .then((response) => response.json())
+    //   .then((data) => console.log(data))
     fetch("https://jsonplaceholder.typicode.com/todos?_limit=4/")
       .then((response) => response.json())
       .then((json) => {
