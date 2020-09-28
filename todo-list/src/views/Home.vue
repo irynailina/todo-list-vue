@@ -1,4 +1,5 @@
 <template>
+  <!-- <BaseContainer /> -->
   <div>
     <h2>Home page</h2>
     <p>
@@ -20,13 +21,14 @@
   </div>
 </template>
 
+
 <script>
-// import { audioPlayer } from "vue-md-player";
-// import "vue-md-player/dist/vue-md-player.css";
-import Vue from 'vue'
-import VueAudio from 'vue-audio-better'
-Vue.use(VueAudio)
+import Vue from "vue";
+import VueAudio from "vue-audio-better";
+Vue.use(VueAudio);
 export default {
+  components: {
+  },
 };
 </script>
 
@@ -40,9 +42,4 @@ export default {
   background-color: red;
   background-image: none;
 }
-/* .wrap {
-  width: 80%;
-  min-width: 600px;
-  background-color: red;
-} */
 </style>
