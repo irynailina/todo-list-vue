@@ -16,6 +16,7 @@
       v-bind:todos="filteredTodos"
       @remove-todo="removeTodo"
     />
+    <!-- <Audio/> -->
     <p v-else>No todos!</p>
   </div>
 </template>
@@ -25,6 +26,7 @@
 import TodoList from "@/components/TodoList";
 import AddTodo from "@/components/AddTodo";
 import Loader from "@/components/Loader";
+// import Audio from "@/components/Audio";
 export default {
   name: "app",
   data() {
@@ -61,6 +63,7 @@ export default {
     TodoList,
     AddTodo,
     Loader,
+    // Audio
   },
   mounted() {
     //       fetch("https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&formatted=0")
